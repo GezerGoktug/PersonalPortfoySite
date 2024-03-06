@@ -1,0 +1,71 @@
+@keyframes iconAnimate {
+  0% {
+    opacity: 0;
+    transform: translate(0, -20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0px);
+  }
+}
+footer .container {
+  padding: 50px 0;
+  text-align: center;
+  h1 {
+    transition: all 0.3s ease-in;
+    font-size: 70px;
+    margin: 30px 0;
+    font-style: oblique;
+    text-shadow: 1px 1px 22px $primaryColor;
+  }
+  .contact-form {
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      .contact-input {
+        width: 50%;
+        position: relative;
+        @extend contactinput;
+      }
+      .contact-message {
+        width: 50%;
+        position: relative;
+        @extend contactmessage;
+      }
+    }
+  }
+  .social-media {
+    @include flexCenter;
+    margin: 20px;
+    gap: 40px;
+    a {
+      @include flexCenter;
+      gap: 15px;
+      i {
+        font-size: 50px;
+      }
+      span {
+        display: none;
+        animation: iconAnimate 0.3s ease-in-out;
+        font-size: 30px;
+      }
+      &:nth-child(1):hover span {
+        display: inline;
+      }
+      &:nth-child(2):hover span {
+        display: inline;
+      }
+      &:nth-child(3):hover span {
+        display: inline;
+      }
+    }
+  }
+  p {
+    padding: 20px 0px;
+    font-size: 20px;
+    border-top: 2px groove $primaryColor;
+    border-bottom: 2px groove $primaryColor;
+  }
+}

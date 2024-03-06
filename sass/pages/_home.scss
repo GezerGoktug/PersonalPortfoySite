@@ -1,0 +1,102 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@import "../base/reset";
+@import "../components/buttons";
+@import "../components/input";
+@import "../components/card";
+@import "../layout/header";
+@import "../layout/hero";
+@import "../layout/navbar";
+@import "../layout/sidebar";
+@import "../layout/main";
+@import "../layout/footer";
+//! SCREEN LEFT SOCİAL MEDİA İCONS START
+@keyframes screenleftAnimateStart {
+  0% {
+    left: -5px;
+    opacity: 0;
+  }
+  100% {
+    left: 5px;
+    opacity: 1;
+  }
+}
+@keyframes screenleftAnimateClose {
+  0% {
+    left: 5px;
+    opacity: 1;
+  }
+  100% {
+    left: -5px;
+    opacity: 0;
+  }
+}
+.screen-left {
+  position: fixed;
+  z-index: 2000;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 5px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  a {
+    width: 50px;
+    height: 50px;
+    border: 2px solid $primaryColor;
+    box-shadow: 2px 2px 12px $primaryColor;
+    background-color: $mainColor;
+    @include flexCenter;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    i {
+      transition: all 0.3s ease-out;
+      color: $primaryColor;
+    }
+    &:hover {
+      background-color: $primaryColor;
+      i {
+        color: $textColor;
+      }
+    }
+  }
+}
+//! SCREEN LEFT SOCİAL MEDİA İCONS STOP
+//! RETURN TOP BUTTON START
+@keyframes returnTopAnimateStart {
+  0% {
+    bottom: -30px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+@keyframes returnTopAnimateClose {
+  0% {
+    bottom: 30px;
+    opacity: 1;
+  }
+  100% {
+    bottom: -30px;
+    opacity: 0;
+  }
+}
+#return-top {
+  position: fixed;
+  z-index: 2000;
+  bottom: 30px;
+  right: 30px;
+  border: 2px solid $textColor;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  @include flexCenter;
+  display: none;
+  background-color: $mainColor;
+  i {
+    font-size: 30px;
+  }
+}
+//! RETURN TOP BUTTON STOP

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Göktuğ Gezer</title>
+    <link rel="stylesheet" href="style.css">
+    <!--! Animate CSS CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--! Font Awesome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--! RETURN TOP BUTTON START  -->
+    <a id="return-top" href="#">
+        <i  class="fa-solid fa-caret-up"></i>
+    </a>
+    <!--! RETURN TOP BUTTON STOP  -->
+    <!--! SCREEN LEFT SOCİAL MEDİA İCONS START  -->
+    <div class="screen-left">
+        <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/g%C3%B6ktu%C4%9Fgezer/">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+    </div>
+    <!--! SCREEN LEFT SOCİAL MEDİA İCONS STOP  -->
+    <!--! RİGHT NAVİGATİON MENU SİDE BAR (For Small Devices) START  -->
+    <aside class="side-bar" id="side-bar">
+        <div class="toggle-bar">
+            <a onclick="toggleSideBar()"  href="#hero" class="logo">
+                <i class="fa-solid fa-bolt"></i>
+                <h1>Göktuğ <span>Gezer</span></h1>
+            </a>
+            <ul>
+                <li>
+                    <a onclick="toggleSideBar()" href="#hero">Home</a>
+                </li>
+                <li>
+                    <a onclick="toggleSideBar()" href="#about">About</a>
+                </li>
+                <li>
+                    <a onclick="toggleSideBar()" href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a onclick="toggleSideBar()" href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a onclick="toggleSideBar()" href="#comments">Comment</a>
+                </li>
+                <li>
+                    <a onclick="toggleSideBar()" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!--! RİGHT NAVİGATİON MENU SİDE BAR (For Small Devices) STOP  -->
+    <!--! HEADER START  -->
+    <header >
+        <video  autoplay muted loop src="./background.mp4"></video>
+        <!--! NAVBAR START  -->
+        <nav id="navbar" >
+            <div class="container">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h1>Göktuğ <span>Gezer</span></h1>
+                </a>
+                <ul>
+                    <li><a  href="#hero">Home</a></li>
+                    <li><a  href="#about">About</a></li>
+                    <li><a  href="#skills">Skills</a></li>
+                    <li><a  href="#projects">Projects</a></li>
+                    <li><a  href="#comments">Comment</a></li>
+                    <li><a  href="#contact">Contact</a></li>
+                    <li>
+                        <a id="toggle-icon" onclick="toggleSideBar()" >
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--! NAVBAR STOP  -->
+        <!--! HERO START  -->
+        <section id="hero" class="hero ">
+            <div class="container">
+                <h2 class="animate-animated animate__bounceIn" >Hello <br> <span id="hero-animate"></span></h2>
+                <p class="animate-animated animate__bounceIn">I am a web developer willing to learn</p>
+                <div class="hero-skills">
+                    <a class="animate-animated animate__bounceIn" href="https://www.w3.org/html/">
+                        <i style="color: orangered;" class="fa-brands fa-html5"></i>
+                    </a>
+                    <a class="animate-animated animate__bounceIn" href="https://www.w3.org/Style/CSS/">
+                        <i style="color: rgb(0, 136, 255);" class="fa-brands fa-css3-alt"></i>
+                    </a>
+                    <a class="animate-animated animate__bounceIn" href="https://www.javascript.com/">
+                        <i style="color: yellow;" class="fa-brands fa-js"></i>
+                    </a>
+                    <a class="animate-animated animate__bounceIn" href="https://getbootstrap.com/">
+                        <i style="color: rgb(118, 45, 173);" class="fa-brands fa-bootstrap"></i>
+                    </a>
+                    <a class="animate-animated animate__bounceIn" href="https://sass-lang.com/">
+                        <i style="color: palevioletred;" class="fa-brands fa-sass"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--! HERO STOP  -->
+    </header>
+    <!--! HEADER STOP  -->
+    <!--! MAİN START  -->
+    <main>
+        <!--! MY ABOUT SECTİON START  -->
+        <section id="about">
+            <div class="container">
+                <h2>My About</h2>
+                <h3>WHO I AM?</h3>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./img/profile.jpg" alt="">
+                    </div>
+                    <div class="card-title">
+                        <h3><i class="fa-solid fa-circle"></i>Göktuğ Gezer</h3>
+                        <p>I am Göktuğ Gezer. I am a web developer who is interested in web technologies and focused on self-improvement in this direction. My goal is to develop myself in full-stack in the web world and then in mobile application technologies. While I am currently learning something from educational platforms, I am also gaining knowledge by studying at the university. You can look at my web-related works below.</p>      
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--! MY ABOUT SECTİON STOP  -->
+        <!--! MY SKİLLS SECTİON START  -->
+        <section id="skills">
+            <div class="container">
+                <h2>My Skills</h2>
+                    <div class="skills-cards">
+                        <div class="card">
+                            <div class="card-img">
+                                <img style="filter: drop-shadow(0px 0px 12px orangered);" src="./img/html5-original.svg" alt="">
+                            </div>
+                            <div class="card-title">
+                                <div class="card-header">HTML5</div>
+                                <div class="card-rating">
+                                    <div class="card-rating-bar">
+                                        <div style="width: 90%;"></div>
+                                    </div>
+                                    <div class="card-rating-title">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img style="filter: drop-shadow(0px 0px 12px rgb(0, 136, 255));"  src="./img/css.png" alt="">
+                            </div>
+                            <div class="card-title">
+                                <div class="card-header">CSS3</div>
+                                <div class="card-rating">
+                                    <div class="card-rating-bar">
+                                        <div style="width: 90%;"></div>
+                                    </div>
+                                    <div class="card-rating-title">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img style="filter: drop-shadow(0px 0px 12px yellow);"  src="./img/js.png" alt="">
+                            </div>
+                            <div class="card-title">
+                                <div class="card-header">JavaScript</div>
+                                <div class="card-rating">
+                                    <div class="card-rating-bar">
+                                        <div style="width: 90%;"></div>
+                                    </div>
+                                    <div class="card-rating-title">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">    
+                                <img style="filter: drop-shadow(0px 0px 12px rgb(242, 8, 250));"  src="./img/bootstrap.png" alt="">
+                            </div>
+                            <div class="card-title">
+                                <div class="card-header">Bootstrap</div>
+                                <div class="card-rating">
+                                    <div class="card-rating-bar">
+                                        <div style="width: 90%;"></div>
+                                    </div>
+                                    <div class="card-rating-title">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img style="filter: drop-shadow(0px 0px 12px palevioletred);"  src="./img/sass.png" alt="">
+                            </div>
+                            <div class="card-title">
+                                <div class="card-header">SASS</div>
+                                <div class="card-rating">
+                                    <div class="card-rating-bar">
+                                        <div style="width: 90%;"></div>
+                                    </div>
+                                    <div class="card-rating-title">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img style="filter: drop-shadow(0px 0px 12px rgb(31, 129, 151));" src="./img/Tailwind-CSS.svg" alt="">
+                            </div>
+                            <div class="card-title">
+                                <div class="card-header">Tailwind CSS</div>
+                                <div class="card-rating">
+                                    <div class="card-rating-bar">
+                                        <div style="width: 90%;"></div>
+                                    </div>
+                                    <div class="card-rating-title">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img style="filter: drop-shadow(0px 0px 12px blue);" src="./img/vscode.png" alt="">
+                            </div>
+                            <div class="card-title">
+                                <div class="card-header">Visuol Studio Code</div>
+                                <div class="card-rating">
+                                    <div class="card-rating-bar">
+                                        <div style="width: 90%;"></div>
+                                    </div>
+                                    <div class="card-rating-title">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!--! MY SKİLLS SECTİON STOP  -->
+        <!--! MY PROJECTS SECTİON START  -->
+        <section id="projects">
+            <div class="container">
+                <h2>My Project</h2>
+                <div class="project-cards">
+                    <div class="card">
+                        <div class="card-img">
+                            <img  src="./img/logo1.png" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="card-header">Netflix Clone</div>
+                            <div class="card-content">
+                                <p>In this project, I created a clone of Netflix's site with HTML, CSS and JavaScript. Translation has also been added according to the language selection in the project. In addition, even if you exit the site, the last language preference remains constant. Thus, when you enter the site again, the site appears in that language. In addition, the site has been made compatible for mobile.</p>
+                            </div>
+                            <div class="card-button">
+                                <button>
+                                    <a href="https://github.com/GezerGoktug/NetflixClone">View Details</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img  src="./img/logo.png" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="card-header">Technology Shop</div>
+                            <div class="card-content">
+                                <p>In this project, I created an e-commerce site with HTML, CSS and Javascript. In addition to adding and removing products to the cart, which are the basic requirements of an e-commerce site, authentication and dashboard operations were also added to the project. In addition, the project was done in accordance with SEO.Users must register to the system to add products to the cart. This information is kept and does not disappear, so the user can log in again later</p>
+                            </div>
+                            <div class="card-button">
+                                <button>
+                                    <a href="https://github.com/GezerGoktug/TechnologyShop">View Details</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="card">
+                        <div class="card-img">
+                            <img  src="./img/logo3.png" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="card-header">Gmail Clone</div>
+                            <div class="card-content">
+                                <p>In this project, a Gmail clone site was created inspired by Gmail's original page. HTML, CSS and JavaScript technologies were used. The data extracted from mail.json is uploaded to the system. You can also star these e-mails. Since these data are saved in localstorage, they will not be lost even if you refresh the page and exit. Also, the project is mobile responsive. brought into a structure.</p>
+                            </div>
+                            <div class="card-button">
+                                <button>
+                                    <a href="https://github.com/GezerGoktug/GmailClone">View Details</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img  src="./img/logo4.png" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="card-header">News Site</div>
+                            <div class="card-content">
+                                <p>In this project, I created a News Site with HTML, CSS and JavaScript. I used News Api as the news content source in the project. I created a loading animation to make it look nice while the news content is loading. By clicking on the news in the desired category, you can access the news in that category. By clicking on the read more button under the news, you can read the details and You can reach the source of the news.Appropriate meta tag adjustments, semantic tag settings were made for SEO in the project and it was made mobile compatible.</p>
+                            </div>
+                            <div class="card-button">
+                                <button>
+                                    <a href="https://github.com/GezerGoktug/NewsSite">View Details</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img  src="./img/logo5.png" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="card-header">Weather App</div>
+                            <div class="card-content">
+                                <p>In this project, a weather application was created with HTML, CSS and JavaScript. By entering the names of the cities and pressing the enter button, you can access the current weather condition, humidity, pressure, wind speed and real, min, max temperature values ​​of that city. OpenWeather Api was used for weather data in the project. Data was retrieved with the fetch API, which is a JavaScript tool for sending HTTP requests to a URL locally. Additionally, the temperature unit can be converted to Fahrenheit or Celsius in the project.</p>
+                            </div>
+                            <div class="card-button">
+                                <button>
+                                    <a href="https://github.com/GezerGoktug/WeatherApp">View Details</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img  src="./img/logo6.png" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="card-header">Quiz App</div>
+                            <div class="card-content">
+                                <p>In this project, I created a Quiz application with HTML CSS and JavaScript. Bootstrap CSS library was used in the design. When you go back to the previous questions, you can change your answers to the questions you have made. After the last question, your answers are evaluated and your score is calculated and the result screen is displayed. If the time runs out, you will be directed to the result screen.</p>
+                            </div>
+                            <div class="card-button">
+                                <button>
+                                    <a href="https://github.com/GezerGoktug/QuizApp">View Details</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img  src="./img/logo7.png" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="card-header">BMW M7 Car Site</div>
+                            <div class="card-content">
+                                <p>In this project, I designed a site for the BMW M7 Diesel series with Tailwind CSS. In some parts, I created a design close to the original, and in others, I added my own interpretation. I added some small functions with JavaScript to make the project look a little better (such as toggle navbar for mobile phones).</p>
+                            </div>
+                            <div class="card-button">
+                                <button>
+                                    <a href="https://github.com/GezerGoktug/BMW_Site">View Details</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img  src="./img/logo8.png" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="card-header">Calculator App</div>
+                            <div class="card-content">
+                                <p>A simple calculator has been created in this project. It performs basic simple arithmetic operations such as addition, subtraction, division and multiplication.</p>
+                            </div>
+                            <div class="card-button">
+                                <button>
+                                    <a href="https://github.com/GezerGoktug/CalculatorApp">View Details</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img  src="./img/logo9.png" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="card-header">Real Estate</div>
+                            <div class="card-content">
+                                <p>In this project, a 3-page real estate website was created. Sass preloader was used in the CSS part. In general, the project uses the 7-1 pattern in Sass. A site was designed using the design structure. Javascript and animate-css library were also used in the project to create beautiful effects and animations. The project was also made mobile compatible.</p>
+                            </div>
+                            <div class="card-button">
+                                <button>
+                                    <a href="https://github.com/GezerGoktug/SassRealEstate">View Details</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img  src="./img/logo10.png" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="card-header">Music Player</div>
+                            <div class="card-content">
+                                <p>In this project, I created a music player with HTML, CSS and JavaScript.</p>
+                            </div>
+                            <div class="card-button">
+                                <button>
+                                    <a href="https://github.com/GezerGoktug/MusicPlayer">View Details</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img  src="./img/logo11.png" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="card-header">Github User Search</div>
+                            <div class="card-content">
+                                <p>In this project, I created a Github User Search site with HTML, CSS and JavaScript. You can find out how many followers the user entered from the input, how many people he follows, and how many repos he has. You can also look at his projects on Github by clicking on 3 prominent repos.</p>
+                            </div>
+                            <div class="card-button">
+                                <button>
+                                    <a href="https://github.com/GezerGoktug/GithubUserSearch">View Details</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img  src="./img/logo12.png" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="card-header">Spending Calculator App</div>
+                            <div class="card-content">
+                                <p>In this project, I created an income expense calculator with HTML Tailwind CSS and JavaScript. You can use '+' signs for income and '-' signs for expenses. How much your monthly earnings are calculated based on the expenses entered in the income statement.</p> 
+                            </div>
+                            <div class="card-button">
+                                <button><a href="https://github.com/GezerGoktug/SpendingCalculatorApp">View Details</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>
+                    <a href="https://github.com/GezerGoktug?tab=repositories">More Project</a>
+                </button>
+            </div>
+        </section>
+        <!--! MY PROJECTS SECTİON STOP  -->
+        <!--! COMMENTS SECTİON START  -->
+        <section id="comments">
+            <div class="container">
+                <h2>Comments</h2>
+                <div class="testimonials">
+                    <div class="card">
+                        <div class="profile">
+                            <img src="./img/avatar1.png" alt="">
+                            <h4>Lorem ipsur</h4>
+                        </div>
+                        <div class="comment">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo velit mollitia inventore, qui sequi voluptates dignissimos. Rem vitae pariatur eum recusandae eligendi voluptatibus sequi voluptatem facere similique, id consequatur dignissimos?</p>
+                        </div>
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <div class="card">
+                        <div class="profile">
+                            <img src="./img/avatar2.png" alt="">
+                            <h4>Lorem ipsur</h4>
+                        </div>
+                        <div class="comment">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo velit mollitia inventore, qui sequi voluptates dignissimos. Rem vitae pariatur eum recusandae eligendi voluptatibus sequi voluptatem facere similique, id consequatur dignissimos?</p>
+                        </div>
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <div class="card">
+                        <div class="profile">
+                            <img src="./img/avatar3.png" alt="">
+                            <h4>Lorem ipsur</h4>
+                        </div>
+                        <div class="comment">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo velit mollitia inventore, qui sequi voluptates dignissimos. Rem vitae pariatur eum recusandae eligendi voluptatibus sequi voluptatem facere similique, id consequatur dignissimos?</p>
+                        </div>
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--! COMMENTS SECTİON STOP  -->
+    </main>
+    <!--! MAİN STOP  -->
+    <!--! FOOTER START  -->
+    <footer id="contact">
+        <div class="container">
+            <h1 id="contact-header">You can contact me below.</h1>
+            <div class="contact-form">
+                <form>
+                    <div class="contact-input">
+                        <input id="contact-email" autocomplete="off" required type="email">
+                        <label for="contact-email" title="Your-Email" data-title="Your-Email">
+                    </div>
+                    <div class="contact-message">
+                        <textarea id="contact-message" autocomplete="off" required ></textarea>
+                        <label for="contact-message" title="Your-Message" data-title="Your-Message">
+                    </div>
+                </form>
+            </div>
+            <div class="social-media">
+                <a href="https://github.com/GezerGoktug">
+                    <i    class="fa-brands fa-github icon"></i>
+                    <span>Github</span>
+                </a>
+                <a href="https://www.linkedin.com/in/g%C3%B6ktu%C4%9Fgezer/">
+                    <i    class="fa-brands fa-linkedin icon"></i>
+                    <span>Linkedn</span>
+                </a>
+                <a href="mailto:ggezer780@gmail.com">
+                    <i    class="fa-solid fa-envelope icon"></i>
+                    <span>Mail</span>
+                </a>
+            </div>
+            <p>&copy; 2024  Göktuğ Gezer  All  Rights  Reserved</p>
+        </div>
+    </footer>
+    <!--! FOOTER STOP  -->
+    <script src="index.js"></script>
+</body>
+</html>

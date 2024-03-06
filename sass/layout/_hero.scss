@@ -1,0 +1,59 @@
+.hero {
+  height: calc(100vh - 90px);
+  position: relative;
+  z-index: 1200;
+  .container {
+    @include flexCenter;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    h2 {
+      font-size: 70px;
+      span {
+        text-shadow: 2px 2px 12px $textColor;
+      }
+    }
+    p {
+      font-size: 30px;
+    }
+    .hero-skills {
+      margin-bottom: 150px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      a {
+        transition: all 0.3s ease-out;
+        &:nth-child(1) {
+          &:hover {
+            filter: drop-shadow(2px 2px 12px orangered);
+          }
+        }
+        &:nth-child(2) {
+          &:hover {
+            filter: drop-shadow(2px 2px 12px rgb(0, 136, 255));
+          }
+        }
+        &:nth-child(3) {
+          &:hover {
+            filter: drop-shadow(2px 2px 12px yellow);
+          }
+        }
+        &:nth-child(4) {
+          &:hover {
+            filter: drop-shadow(2px 2px 12px rgb(118, 45, 173));
+          }
+        }
+        &:nth-child(5) {
+          &:hover {
+            filter: drop-shadow(2px 2px 12px palevioletred);
+          }
+        }
+        i {
+          font-size: 40px;
+          transition: all 0.3s ease-out;
+        }
+      }
+    }
+  }
+}

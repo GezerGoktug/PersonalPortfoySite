@@ -1,0 +1,278 @@
+@mixin mdNav {
+  nav {
+    .logo {
+      font-size: 14px !important;
+    }
+    ul {
+      gap: 2px !important;
+      li {
+        font-size: 14px !important  ;
+        a {
+          padding: 4px 4px !important;
+        }
+      }
+    }
+  }
+}
+@mixin smNav {
+  nav {
+    ul {
+      li {
+        a {
+          display: none !important;
+        }
+        #toggle-icon {
+          font-size: 24px;
+          padding: 0;
+          display: inline !important;
+        }
+      }
+    }
+  }
+}
+@mixin mdHero {
+  .hero .container {
+    h2 {
+      font-size: 50px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+}
+@mixin smHero {
+  .hero .container {
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+@mixin xsmHero {
+  .hero .container {
+    h2 {
+      font-size: 26px;
+    }
+    p {
+      font-size: 12px;
+    }
+    .hero-skills {
+      gap: 30px;
+      a i {
+        font-size: 30px;
+      }
+    }
+  }
+}
+@mixin mdCard {
+  .skills-cards .card {
+    padding: 10px 15px;
+    gap: 15px;
+    border: 3px solid $primaryColor;
+    .card-img {
+      padding: 15px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .card-title {
+      .card-header {
+        font-size: 16px;
+        font-weight: 800;
+      }
+      .card-rating {
+        gap: 10px;
+        .card-rating-bar {
+          width: 70%;
+        }
+        .card-rating-title {
+          width: 10%;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  #about .card {
+    .card-img img {
+      width: 200px;
+      max-height: 200px;
+    }
+    .card-title {
+      h3 {
+        font-size: 30px;
+        i {
+          font-size: 10px;
+        }
+      }
+      p {
+        margin-left: 5px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+@mixin smCard {
+  #about .card {
+    flex-direction: column;
+    .card-title {
+      h3 {
+        gap: 10px;
+      }
+      p {
+        padding-left: 16px;
+      }
+    }
+  }
+}
+@mixin xsmCard {
+  #about .card {
+    .card-title {
+      h3 {
+        gap: 6px;
+        font-size: 25px;
+      }
+      p {
+        padding-left: 13px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+@mixin mdSections {
+  main section {
+    &#skills .skills-cards {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+}
+@mixin xsmSections {
+  main section {
+    &#comments .testimonials {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+}
+@mixin mdScreenFixedİcons {
+  #return-top {
+    width: 40px;
+    height: 40px;
+    right: 15px;
+    i {
+      font-size: 20px;
+    }
+  }
+  .screen-left {
+    a {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+@mixin xsmScreenFixedİcons {
+  #return-top {
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    i {
+      font-size: 15px;
+    }
+  }
+  .screen-left {
+    a {
+      width: 30px;
+      height: 30px;
+      i {
+        font-size: 10px;
+      }
+    }
+  }
+}
+@mixin mdFooter {
+  footer .container {
+    h1 {
+      font-size: 50px;
+    }
+    .contact-form form {
+      .contact-input,
+      .contact-message {
+        width: 70%;
+      }
+    }
+  }
+}
+@mixin smFooter {
+  footer .container {
+    h1 {
+      font-size: 40px;
+    }
+    .contact-form form {
+      .contact-input,
+      .contact-message {
+        width: 90%;
+      }
+    }
+  }
+}
+@mixin xsmFooter {
+  footer .container {
+    h1 {
+      font-size: 30px;
+    }
+    .contact-form form {
+      .contact-input,
+      .contact-message {
+        width: 100%;
+      }
+    }
+    .social-media a {
+      i {
+        font-size: 30px;
+      }
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@mixin mdContainer {
+  .container {
+    margin: 0 7%;
+  }
+}
+@mixin smContainer {
+  .container {
+    margin: 0 5%;
+  }
+}
+@mixin xsmContainer {
+  .container {
+    margin: 0 3%;
+  }
+}
+@media (max-width: 900px) {
+  @include mdContainer;
+  @include mdNav;
+  @include mdHero;
+  @include mdSections;
+  @include mdCard;
+  @include mdFooter;
+  @include mdScreenFixedİcons;
+}
+@media (max-width: 600px) {
+  @include smContainer;
+  @include smNav;
+  @include smHero;
+  @include smFooter;
+  @include smCard;
+}
+@media (max-width: 400px) {
+  @include xsmContainer;
+  @include xsmHero;
+  @include xsmFooter;
+  @include xsmSections;
+  @include xsmScreenFixedİcons;
+  @include xsmCard;
+}
