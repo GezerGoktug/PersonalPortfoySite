@@ -49,6 +49,11 @@
             filter: drop-shadow(2px 2px 12px palevioletred);
           }
         }
+        &:nth-child(6) {
+          &:hover {
+            filter: drop-shadow(2px 2px 12px rgb(107, 151, 205));
+          }
+        }
         i {
           font-size: 40px;
           transition: all 0.3s ease-out;
